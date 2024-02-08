@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 2rem;
+}
+
+:root {
+  --clr-primary-800: hsl(223, 87%, 63%);
+
+  --clr-primary-100: hsl(223, 100%, 88%);
+  --clr-secondary: hsl(354, 100%, 66%);
+
+  --clr-neutral-500: hsl(0, 0%, 59%);
+  --clr-neutral-s-700: hsl(209, 33%, 12%);
+}
+
+.icons__container {
+  height: auto;
+  width: 2rem;
+}
+
+.fb {
+  height: auto;
+  width: 1.5rem;
+}
