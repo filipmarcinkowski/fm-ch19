@@ -11,6 +11,10 @@ html {
 body {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 2rem;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
 :root {
@@ -20,15 +24,95 @@ body {
   --clr-secondary: hsl(354, 100%, 66%);
 
   --clr-neutral-500: hsl(0, 0%, 59%);
+  --clr-neutral-700: hsl(0, 0%, 80%);
   --clr-neutral-s-700: hsl(209, 33%, 12%);
+
+  --mb-s: 2rem;
+  --mb-m: 4rem;
+  --mb-l: 8rem;
+  --mb-xl: 12rem;
 }
 
+/* /////////////////////////////////////////////////////// */
+
+.container {
+  max-width: 60rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+}
+
+.logo {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.graphic {
+  width: 100%;
+}
+
+h1 {
+  font-weight: 300;
+  color: var(--clr-neutral-700);
+}
+
+h1 strong {
+  color: var(--clr-neutral-s-700);
+}
+
+.title-desc {
+  font-size: 1.6rem;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+}
+/*////////// INPUT///////////////////////// */
+
+/*/ ///////// ICONS///////////////////////// */
 .icons__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.icons__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 3rem;
+  width: 3rem;
+  border: 0.1rem solid var(--clr-neutral-700);
+  border-radius: 3rem;
+}
+
+.icons__icon {
+  width: 1.5rem;
   height: auto;
-  width: 2rem;
 }
 
 .fb {
-  height: auto;
-  width: 1.5rem;
+  width: 1rem;
+}
+
+/*/ ///////// MARGINS ///////////////////////// */
+
+.margin__bs {
+  margin-bottom: var(--mb-s);
+}
+.margin__bm {
+  margin-bottom: var(--mb-m);
+}
+.margin__bl {
+  margin-bottom: var(--mb-l);
 }
