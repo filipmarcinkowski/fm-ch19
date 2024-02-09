@@ -20,7 +20,9 @@ body {
 :root {
   --clr-primary-800: hsl(223, 87%, 63%);
 
+  --clr-primary-300: hsl(223, 100%, 75%);
   --clr-primary-100: hsl(223, 100%, 88%);
+  --clr-primary-10: hsla(223, 100%, 88%, 0.383);
   --clr-secondary: hsl(354, 100%, 66%);
 
   --clr-neutral-500: hsl(0, 0%, 59%);
@@ -41,6 +43,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 4rem auto;
+  width: 100%;
 }
 
 .logo {
@@ -75,6 +78,65 @@ p {
   font-size: 1.2rem;
 }
 /*////////// INPUT///////////////////////// */
+
+.input__container {
+  display: flex;
+  gap: 1rem;
+
+  width: 100%;
+}
+
+.input__input-box {
+  flex-shrink: 1;
+  width: 100%;
+  position: relative;
+}
+
+.input__input {
+  width: 100%;
+  height: 5rem;
+
+  border: 0.1rem solid var(--clr-neutral-700);
+  border-radius: 4rem;
+  text-indent: 3rem;
+}
+
+.input__error {
+  position: absolute;
+  top: 6rem;
+  left: 3rem;
+  color: var(--clr-secondary);
+}
+
+.error-msg {
+  display: none;
+}
+
+.error {
+  border: 0.1rem solid var(--clr-secondary);
+}
+
+.input__btn {
+  flex-shrink: 2;
+
+  height: 5rem;
+  width: 100%;
+
+  border: none;
+  border-radius: 4rem;
+  background-color: var(--clr-primary-800);
+  box-shadow: 0 0.4rem 0.3rem 0.2rem var(--clr-primary-10);
+  cursor: pointer;
+
+  transition: all 0.3s;
+
+  color: #fff;
+  font-weight: 600;
+}
+
+.input__btn:hover {
+  background-color: var(--clr-primary-300);
+}
 
 /*/ ///////// ICONS///////////////////////// */
 .icons__container {
