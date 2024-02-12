@@ -12,7 +12,8 @@ body {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 2rem;
   height: 100vh;
-  display: grid;
+
+  display: flex;
   justify-content: center;
   align-content: center;
 }
@@ -27,6 +28,7 @@ body {
 
   --clr-neutral-500: hsl(0, 0%, 59%);
   --clr-neutral-700: hsl(0, 0%, 80%);
+  --clr-neutral-000: hsl(0, 0%, 100%);
   --clr-neutral-s-700: hsl(209, 33%, 12%);
 
   --mb-vs: 1rem;
@@ -43,7 +45,7 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  margin: 4rem auto;
+  margin: 4rem 10vw;
   width: 100%;
 }
 
@@ -54,6 +56,7 @@ body {
 }
 
 .graphic {
+  /* margin: 2rem; */
   width: 100%;
 }
 
@@ -83,7 +86,6 @@ p {
 .input__container {
   display: flex;
   gap: 1rem;
-
   width: 100%;
 }
 
@@ -138,6 +140,7 @@ p {
 }
 
 /*/ ///////// ICONS//////////////////// */
+
 .icons__container {
   width: 100%;
   display: flex;
@@ -146,29 +149,24 @@ p {
   gap: 2rem;
 }
 
-.icons__box {
+.icons__icon {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  color: var(--clr-primary-800);
+  font-size: 1.5rem;
   height: 3rem;
   width: 3rem;
   border: 0.1rem solid var(--clr-neutral-700);
   border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-.icons__icon {
-  color: var(--clr-primary-800);
-  font-size: 2rem;
-  /* background-color: red; */
-}
-
-.fb {
-  height: 2rem;
-  width: 2rem;
-  font-size: 2.8rem;
-  /* background-color: blue; */
-  border-radius: 6rem;
+.icons__icon:hover {
+  color: var(--clr-neutral-000);
+  background-color: var(--clr-primary-800);
+  border: none;
 }
 
 /*/ ///////// MARGINS ///////////////////////// */
