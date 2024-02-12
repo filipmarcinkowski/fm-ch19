@@ -5,8 +5,6 @@ const inputField = document.querySelector('.input__input');
 const errorMsg = document.querySelector('.input__error');
 
 const checkAdress = function (e) {
-  e.preventDefault();
-
   const input = inputField.value;
 
   const a = input.slice(0, input.indexOf('@')).length;
@@ -29,3 +27,9 @@ const checkAdress = function (e) {
 };
 
 btn.addEventListener('click', checkAdress);
+
+inputField.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    checkAdress();
+  }
+});
